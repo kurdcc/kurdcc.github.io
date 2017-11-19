@@ -17,11 +17,11 @@ header{
 }
 .title{
   text-align: center;
-	font-family: "GeosansLight";
+	font-family: 'Oswald', sans-serif;
 	text-shadow: 5px 0px 25px #10ff00;
 	font-size: 3rem;
 	padding: 1.3rem 0;
-    background: url(money.jpg);
+  background: url(money.jpg);
 	position: relative;
 }
 .social {
@@ -35,14 +35,6 @@ header{
     font-family: 'Oswald', sans-serif;
 	transition:0.3s ease;
 	position:absolute;
-}
-section.hh {
-    background: rgba(70, 168, 168, 0.8);
-    display: flex;
-    align-items: center;
-    font-family: 'UbuntuRegular';
-    color: white;
-    text-align: justify;
 }
 .social:hover {
 	padding: 5px 10px 3px 10px;
@@ -74,29 +66,6 @@ section.hh {
     width: 77%;
     display: inline-block;
     vertical-align: top;
-}
-section.hh {
-    background: rgba(70, 168, 168, 0.8);
-    display: flex;
-    align-items: center;
-    font-family: 'UbuntuRegular';
-    color: white;
-    text-align: justify;
-}
-.hh {
-    border-bottom: 3px solid rgba(0, 128, 128, 0.83);
-    margin: 0;
-}
-.inline {
-    display: inline-block;
-    border-bottom: 3px solid rgba(0, 128, 128, 0.83);
-    width: 22%;
-    margin: 5px;
-    vertical-align: top;
-    text-align: justify;
-    font-family: 'UbuntuRegular';
-    background: white;
-    border-radius: 5px 5px 0 0;
 }
 .p {
     display: -webkit-inline-box;
@@ -136,13 +105,6 @@ section.hh {
 	height: 2.5rem;
 	vertical-align: middle;
 }
-
-.hh-title {
-  text-align: center;
-	font-family: "Orbitron";
-	font-size: 10;
-}
-
 /*Inputs*/
 form#console {
 	text-align: center;
@@ -241,7 +203,7 @@ select.input_text {
 
 /*Textarea*/
 .textarea {
-  font-size: 16px;
+  font-size: 18px;
   overflow-x: hidden;
   overflow-y: scroll;
   border-radius: 6px;
@@ -252,6 +214,8 @@ select.input_text {
   color: #48a846;
   padding: 5px;
   line-height: 1.2;
+  font-family: Menlo;
+  cursor: text;
 }
 span.fa.fa-heart.pulse {
     color: #E90606;
@@ -391,6 +355,9 @@ footer {
 	}
 	.fa {
 	  margin-left: 7px;
+	}
+	.textarea {
+	  font-size:16px;
 	}
 }
 @media (max-width: 445px){

@@ -30,7 +30,7 @@ function unilenS(aS,ul,fc,p){
 }
 
 function namsogo(p1,tr){
-	tr*=1.0; 
+	tr*=1.0;
 	if(tr<1 || tr==null) tr=1;
 	document.console.output2.value="";
 	var ccghm=document.console.ccghm.value;
@@ -63,12 +63,12 @@ function namsogo(p1,tr){
 				else if(j==2) ccnspc="-";
 				var cdif="";
 				for(var i=1;i<=cdi.length;i++){
-					var aS=midS(cdi,i,1); 
+					var aS=midS(cdi,i,1);
 					if(aS==" ")	aS=ccnspc;
 					cdif+=aS;
 				}
 				if(document.console.ccexpdat.checked && document.console.emeses.value=='rnd' && document.console.eyear.value=='rnd'){
-					var dnowi=new Date(); 
+					var dnowi=new Date();
 					var mes=unilenS(rnd(1,12),2,'0',0);
 					var year=(dnowi.getFullYear()+rnd(2,5));
 				}else if(document.console.ccexpdat.checked && document.console.emeses.value!='rnd' && document.console.eyear.value=='rnd'){
@@ -76,7 +76,7 @@ function namsogo(p1,tr){
 					var mes=document.console.emeses.value;
 					var year=(dnowi.getFullYear()+rnd(2,5));
 				}else if(document.console.ccexpdat.checked && document.console.emeses.value=='rnd' && document.console.eyear.value!='rnd'){
-					var dnowi=new Date(); 
+					var dnowi=new Date();
 					var mes=unilenS(rnd(1,12),2,'0',0);
 					var year=document.console.eyear.value;
 				}else if(document.console.ccexpdat.checked && document.console.emeses.value!='rnd' && document.console.eyear.value!='rnd'){
@@ -84,7 +84,7 @@ function namsogo(p1,tr){
 					var year=document.console.eyear.value;
 				}else var ccexp='';
 				if(document.console.eccv.value=='rnd' && document.console.ccvi.checked){
-					var binC=cdif.toString(); 
+					var binC=cdif.toString();
 					var tipo = parseInt(binC.substring(0,1));
 					if(tipo==3) var eccv=(Math.floor(Math.random() * (9998 - 1102 + 1)) + 1102);
 					else var eccv=(Math.floor(Math.random() * (998 - 112 + 1)) + 112);
@@ -100,7 +100,7 @@ function namsogo(p1,tr){
 				}else if(jou==1){
 					var out=out+=cdif;
 					if(document.console.ccvi.checked) var out=out+=", "+eccv;
-					if(document.console.ccexpdat.checked) var out=out+=", "+mes+'/'+year;		
+					if(document.console.ccexpdat.checked) var out=out+=", "+mes+'/'+year;
 					if(document.console.ccbank.checked) var out=out+=", "+cn+"\n";
 					else var out=out+="\n";
 				}else if(jou==2){
@@ -155,10 +155,10 @@ function chkCCCksum(cf,cn){
 		var m=midS(cf,i,1)*midS(w,j,1);
 		m=sumDigits(m);
 		ml+=""+m;
-		j++; 
+		j++;
 		if(j>w.length) j=1;
 	}
-	var ml2=sumDigits(ml,-1); 
+	var ml2=sumDigits(ml,-1);
 	var ml1=(sumDigits(ml2,-1)*10-ml2)%10;
 	if(ml1==rightS(cf,1)) r=true;
 	return r;
@@ -171,7 +171,7 @@ function chkLCD(cf){
 	for(var i=1;i<=cf.length;i++){
 		var cdg=midS(cf,i,1);
 		if(isdiv(i,2)!=bl){
-			cdg*=2; 
+			cdg*=2;
 			if(cdg>9) cdg-=9;
 		}
 		ctd+=cdg*1.0;
@@ -182,7 +182,7 @@ function chkLCD(cf){
 
 function mkCClist(){
 	tw=449;
-	c=new makeArray(tw); 
+	c=new makeArray(tw);
 	cd=new makeArray(tw);
 	var i=1;
 	c[i]="37xxxxxxxxxxxxx"; cd[i]="AmEx"; i++;
@@ -218,7 +218,7 @@ function mkCClist(){
 	c[i]="4094xxxxxxxxxxxx"; cd[i]="Visa-A.M.C. Federal Credit Union"; i++;
 	c[i]="4113xxxxxxxxxxxx"; cd[i]="Visa-Valley National Bank"; i++;
 	c[i]="4114xxxxxxxxxxxx"; cd[i]="Visa-Chemical Bank"; i++;
-	c[i]="4121xxxxxxxxxxxx"; cd[i]="Visa-Pennsylvania State Employees Credit Union"; i++; 
+	c[i]="4121xxxxxxxxxxxx"; cd[i]="Visa-Pennsylvania State Employees Credit Union"; i++;
 	c[i]="4121xxxxxxxxxxxx"; cd[i]="Visa CV-Signet Bank"; i++;
 	c[i]="4122xxxxxxxxxxxx"; cd[i]="Visa-Union Trust"; i++;
 	c[i]="4125xxxxxxxxxxxx"; cd[i]="Visa-Marine Midland"; i++;
@@ -480,6 +480,6 @@ function makeArray(n){
 }
 
 function cleanText(){
-	var confirmar=confirm("Deseja remover os cartões gerados?");
+	var confirmar=confirm("دڵنیای له‌ سڕینه‌وه‌ی کارته‌ دروستکراوه‌کان؟");
 	if (confirmar) $('#output2').val('');
 }
