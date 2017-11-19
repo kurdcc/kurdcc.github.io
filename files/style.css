@@ -124,6 +124,10 @@ section.hh {
     width: 100%;
     max-width: 280px;
 }
+.Lbutton-down {
+  margin: 25px auto 0 auto;
+  display:block;
+}
 
 /*Body Principal*/
 .title img{
