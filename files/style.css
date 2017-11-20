@@ -189,7 +189,9 @@ select.input_text {
 .eighty{
 	width:80%;
 }
-
+.trer {
+	  margin-right: -1;
+}
 /*Boton*/
 .Lbutton:hover {
 	background-color:#f6f6f6;
