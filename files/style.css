@@ -429,3 +429,7 @@ footer {
 		display:block !important;
 	}
 }
+/*i need to delete these later*/
+.developedby {
+  display:none;
+}
