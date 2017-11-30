@@ -193,12 +193,12 @@ select.input_text {
 .Lbutton:hover {
 	background-color:#f6f6f6;
 	transform: scale(0.98)!important;
-	transition:all 0.3s ease;
+	transition:all 0.3s ease!important;
 	box-shadow: 0 0 7px #00000082;
 }
 .Lbutton:active {
-  transform: scale(0.97);
-  transition:all 0.05s ease;
+  transform: scale(0.97)!important;
+  transition:all 0.05s ease!important;
   box-shadow: 0 0 0 #00000082;
 }
 
