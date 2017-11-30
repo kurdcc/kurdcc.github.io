@@ -122,7 +122,7 @@ function namsogo(p1,tr){
 					if(k<ccghm)	var out=out+",";
 					var out=out+"\n";
 				}
-			}else var out="Desculpe, nenhuma BIN válida inserida, ou a BIN esta incompleta, verifique se o formato está correto, exemplo: '666666xxxxxxxxxx' ";
+			}else var out="ببوره‌, بین کۆده‌که‌ت دروست نیه‌, دڵنیابه‌ره‌وه‌ له‌ ژماره‌کان, نمونه‌: 666666xxxxxxxxxx‌ ";
 		}
 		if(jou==2) var out=out+"</xml>";
 		else if(jou==3) var out=out+"}";

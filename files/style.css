@@ -7,6 +7,13 @@ body{
 	background-image: url(pattern.png);
 	font-family: Menlo;
 }
+body::-webkit-scrollbar {
+    width: 5px!important;
+    background: #f3f3f3!important;
+}
+body::-webkit-scrollbar-thumb {
+    background: #088000 !important;
+}
 /*Header*/
 header{
 	color:white;
@@ -39,7 +46,7 @@ header{
 }
 .insideheader {
     position: absolute;
-    background: linear-gradient(to right, #00000047,#ffffff00,#00000047);
+    background: linear-gradient(to right, #00000050,#ffffff00,#00000050);
     width: 100%;
     height: 100%;
     top: 0;
@@ -186,18 +193,18 @@ select.input_text {
 	width:80%;
 }
 .trer {
-	  margin-right: -1;
+	  margin-right: -1px;
 	  margin-left: -5px;
 }
 /*Boton*/
 .Lbutton:hover {
 	background-color:#f6f6f6;
-	transform: scale(0.98)!important;
+	transform: scale(0.99)!important;
 	transition:all 0.3s ease!important;
 	box-shadow: 0 0 7px #00000082;
 }
 .Lbutton:active {
-  transform: scale(0.97)!important;
+  transform: scale(0.985)!important;
   transition:all 0.05s ease!important;
   box-shadow: 0 0 0 #00000082;
 }
