@@ -2,9 +2,6 @@
     font-family: Menlo;
     src: url(sirwan.woff2);
 }
-a:-webkit-any-link {
-  text-decoration:none;
-}
 body{
 	margin:0;
 	background-image: url(pattern.png);
@@ -197,7 +194,7 @@ select.input_text {
 	background-color:#f6f6f6;
 	transform: scale(0.98);
 	transition:all 0.3s ease;
-	box-shadow: 0 0 13px #00000082;
+	box-shadow: 0 0 7px #00000082;
 }
 .Lbutton:active {
   transform: scale(0.97);
