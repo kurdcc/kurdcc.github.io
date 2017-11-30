@@ -209,7 +209,6 @@ select.input_text {
 .textarea {
   font-size: 18px;
   overflow-x: hidden;
-  overflow-y: scroll;
   border-radius: 6px;
   background: #2b2b2b;
   border: 1px solid #000;
