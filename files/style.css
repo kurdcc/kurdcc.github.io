@@ -230,17 +230,15 @@ select.input_text {
 .textarea::-moz-selection {
   background: #ffffff;
 }
-span.fas.fas-heart.pulse {
+span.fas.fa-heart.pulse {
     color: #E90606;
     font-size: 95%;
     animation: pound .5s infinite alternate;
     -webkit-animation: pound .5s infinite alternate;
 }
-.fas {
+.fas .far {
     display: inline-block;
-    font-family: FontAwesome;
     font-style: normal;
-    font-weight: normal;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -313,7 +311,7 @@ footer {
 	form#console {
 	  margin:0;
 	}
-	.fas {
+	.fas .far {
 	  margin-left: 7px;
 	}
 }
@@ -368,7 +366,7 @@ footer {
 	form#console {
 	  margin:0;
 	}
-	.fas {
+	.fas .far {
 	  margin-left: 7px;
 	}
 	.textarea {
@@ -405,7 +403,7 @@ footer {
 	form#console {
 	  margin:0;
 	}
-	.fas {
+	.fas .far {
 	  margin-left: 7px;
 	}
 }
